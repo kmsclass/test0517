@@ -7,11 +7,11 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
-
+//test.Project 클래스의 모든 public 메서드만 가능하도록 수정  
 @Component
 @Aspect
 public class LoggingAspect {
-	final String publicMethod = "execution(public * test..*(..))";
+	final String publicMethod = "execution(public * test.Project.*(..))";
 	@Before(publicMethod)  
 	public void before() {
 		System.out.println("[LA] Before 메서드 실행 전 실행");
