@@ -16,9 +16,9 @@ public class Main1 {
 		System.out.println(user1.getContact().getFax()); //02-1111-1112
 		
 		User user2 = ctx.getBean("user2", User.class);
-		System.out.println(user2.getId());
-		System.out.println(user2.getContact().getTel());
-		System.out.println(user2.getContact().getFax());		
+		System.out.println(user2.getId());  //kimsg
+		System.out.println(user2.getContact().getTel()); //02-2222-2220
+		System.out.println(user2.getContact().getFax()); //02-2222-2229		
 	}
 }
 //1. AppConfig에서 객체 생성

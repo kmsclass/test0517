@@ -3,7 +3,7 @@ package test0518;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
+//@Configuration
 public class AppConfig {
 	@Bean
 	public Contact contact1() {  
